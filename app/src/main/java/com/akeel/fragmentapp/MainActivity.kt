@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
 
         val button = findViewById<Button>(R.id.button)
         val button2 = findViewById<Button>(R.id.button2)
+        val button3 = findViewById<Button>(R.id.button3)
 
         button.setOnClickListener {
             replaceFrameWithFragment(FragmentClock())
@@ -31,6 +32,9 @@ class MainActivity : AppCompatActivity() {
         button2.setOnClickListener {
             replaceFrameWithFragment(FragmentExam())
 
+        }
+        button3.setOnClickListener {
+            replaceFrameWithFragment(BlankFragment())
         }
     }
 
