@@ -8,6 +8,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
+import com.akeel.FragmentExam
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,10 +28,10 @@ class MainActivity : AppCompatActivity() {
             replaceFrameWithFragment(FragmentClock())
 
         }
-       /* button2.setOnClickListener {
+        button2.setOnClickListener {
             replaceFrameWithFragment(FragmentExam())
 
-        }*/
+        }
     }
 
     private fun replaceFrameWithFragment(frag: Fragment) {
